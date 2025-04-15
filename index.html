@@ -40,8 +40,8 @@
 
 <body class="font-manrope">
     <header class="container mx-auto">
-        <div class="hero min-h-screen">
-            <div class="hero-content flex-col lg:flex-row">
+        <div class="my-20">
+            <div class="flex justify-between items-center flex-col lg:flex-row">
 
                 <div>
                     <h1 class="text-7xl font-extrabold">It's good <br>
@@ -49,10 +49,13 @@
                     <p class="py-6">
                         Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds..
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn bg-gradient-to-r from-[#FF8938] to-[#FF0000] p-7 text-white">
+                        Explore More
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                    </button>
                 </div>
                 <div>
-                    <img src="/images/banner.png" class="max-w-sm" />
+                    <img src="/images/banner.png" class="" />
                     <!-- ratings badge -->
                     <div class="-mt-16 flex items-center gap-4
                      drop-shadow-lg bg-white p-5 w-60">
@@ -271,9 +274,53 @@
 
     </main>
 
-    <footer>
+    <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+        <div class="flex justify-between my-24">
+            <img src="/images/cup.png" alt="">
+            <p>
+                <span>Ready to get strated?</span>
+                <button class="btn btn-primary bg-gradient-to-r from-[#FF8938] to-[#FF0000] px-6 py-6 text-white">Get Started</button>
+            </p>
+        </div>
 
+        <div class="footer sm:footer-horizontal ">
+            <nav>
+                <h6 class="footer-title">Services</h6>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Company</h6>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Legal</h6>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+            <form>
+                <h6 class="footer-title">Newsletter</h6>
+                <fieldset class="w-80">
+                    <label>Enter your email address</label>
+                    <div class="join">
+                        <input type="text" placeholder="username@site.com"
+                            class="join-item input bg-transparent border-b-2 border-black py-2 px-4 rounded non focusoutline-none"  />
+                        <button class="btn btn-primary rounded-full top-0 right-0 bg-gradient-to-r from-[#FF8938] to-[#FF0000]  p-7 text-slate-200"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <aside class="mt-10 text-center">
+            <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+        </aside>
     </footer>
+
 </body>
 
 </html>
